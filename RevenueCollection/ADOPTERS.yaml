@@ -1,0 +1,10 @@
+description: This is a compilation list of the current adopters of the data model RevenueCollection of the Subject dataModel.Transportation.  All fields are non mandatory.
+currentAdopters:
+-
+ adopter: IUDX
+ description:  Data Model for RevenueCollection. Initially for vehicle and transportation.
+ mail: 
+ organization: 
+ project: 
+ comments: 
+ startDate: 
