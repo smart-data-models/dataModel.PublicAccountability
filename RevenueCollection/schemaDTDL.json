@@ -1,0 +1,499 @@
+{
+    "@id": "dtmi:com:ngsi-ld:RevenueCollection;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": " - PublicAccountability / RevenueCollection adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.PublicAccountability/master/RevenueCollection/schema.json",
+    "description": "A Data Model for city revenue collection operations.",
+    "displayName": "RevenueCollection",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "amountCollected",
+            "writable": true,
+            "displayName": "amountCollected",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Amount collected towards the service corresponding to this observation."
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateObserved",
+            "writable": true,
+            "displayName": "dateObserved",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "The date and time of this observation in ISO8601 UTC format"
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "enrollmentCertificateRecoveryAmount",
+            "writable": true,
+            "displayName": "enrollmentCertificateRecoveryAmount",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Amount collected towards Enrollment Certificate from the establishment on annual basis."
+        },
+        {
+            "name": "month",
+            "writable": true,
+            "displayName": "month",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Month corresponding to this observation and is described in MM format, for eg. '05' for the month of May."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "registrationCertificateRecoveryAmount",
+            "writable": true,
+            "displayName": "registrationCertificateRecoveryAmount",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Amount collected towards Registration Certificate on monthly basis from the establishment per employee."
+        },
+        {
+            "name": "revenueCollectionType",
+            "writable": true,
+            "displayName": "revenueCollectionType",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Type of source from which the city administration collects the revenue, could be property tax, vehicle registration, party hall booking, community hall booking, auditorium booking etc."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "totalCount",
+            "writable": true,
+            "displayName": "totalCount",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Count of the revenue collection service corresponding to this observation."
+        },
+        {
+            "name": "vehicleTypeCode",
+            "writable": true,
+            "displayName": "vehicleTypeCode",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The code for vehicleType corresponding to this observation. For eg.- '1' - MOPED/SCOOTER, '2' - MOTOR CYCLE, '4' - PRIVATE MOTOR CAR/JEEP CAR, '21' - TEMPO, '26' - BUS, etc."
+        },
+        {
+            "name": "year",
+            "writable": true,
+            "displayName": "year",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "Year corresponding to this observation and is described in YYYY format, for eg. '2020'."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "object",
+            "name": "municipalityInfo",
+            "comment": "Municipality information corresponding to this observation.",
+            "displayName": "municipalityInfo",
+            "fields": [
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "cityId",
+                    "schema": "string"
+                },
+                {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
+                    "name": "ulbName",
+                    "schema": "string"
+                },
+                {
+                    "name": "wardNum",
+                    "schema": "long"
+                },
+                {
+                    "name": "zoneId",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "vehicleType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "agriculturalVehicle",
+                        "displayName": "agriculturalVehicle",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "anyVehicle",
+                        "displayName": "anyVehicle",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "articulatedVehicle",
+                        "displayName": "articulatedVehicle",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "autorickshaw",
+                        "displayName": "autorickshaw",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "bicycle",
+                        "displayName": "bicycle",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "binTrolley",
+                        "displayName": "binTrolley",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "BRT mini bus\u00b7",
+                        "displayName": "BRT mini bus\u00b7",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "BRT bus",
+                        "displayName": "BRT bus",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "bus",
+                        "displayName": "bus",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "car",
+                        "displayName": "car",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "caravan",
+                        "displayName": "caravan",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "carOrLightVehicle",
+                        "displayName": "carOrLightVehicle",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "carWithCaravan",
+                        "displayName": "carWithCaravan",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "carWithTrailer",
+                        "displayName": "carWithTrailer",
+                        "enumValue": 14
+                    },
+                    {
+                        "name": "cleaningTrolley",
+                        "displayName": "cleaningTrolley",
+                        "enumValue": 15
+                    },
+                    {
+                        "name": "compactor",
+                        "displayName": "compactor",
+                        "enumValue": 16
+                    },
+                    {
+                        "name": "constructionOrMaintenanceVehicle",
+                        "displayName": "constructionOrMaintenanceVehicle",
+                        "enumValue": 17
+                    },
+                    {
+                        "name": "dumper",
+                        "displayName": "dumper",
+                        "enumValue": 18
+                    },
+                    {
+                        "name": "e-moped",
+                        "displayName": "e-moped",
+                        "enumValue": 19
+                    },
+                    {
+                        "name": "e-scooter",
+                        "displayName": "e-scooter",
+                        "enumValue": 20
+                    },
+                    {
+                        "name": "e-motorcycle",
+                        "displayName": "e-motorcycle",
+                        "enumValue": 21
+                    },
+                    {
+                        "name": "fourWheelDrive",
+                        "displayName": "fourWheelDrive",
+                        "enumValue": 22
+                    },
+                    {
+                        "name": "highSidedVehicle",
+                        "displayName": "highSidedVehicle",
+                        "enumValue": 23
+                    },
+                    {
+                        "name": "hopper",
+                        "displayName": "hopper",
+                        "enumValue": 24
+                    },
+                    {
+                        "name": "lorry",
+                        "displayName": "lorry",
+                        "enumValue": 25
+                    },
+                    {
+                        "name": "minibus",
+                        "displayName": "minibus",
+                        "enumValue": 26
+                    },
+                    {
+                        "name": "moped",
+                        "displayName": "moped",
+                        "enumValue": 27
+                    },
+                    {
+                        "name": "motorcycle",
+                        "displayName": "motorcycle",
+                        "enumValue": 28
+                    },
+                    {
+                        "name": "motorcycleWithSideCar",
+                        "displayName": "motorcycleWithSideCar",
+                        "enumValue": 29
+                    },
+                    {
+                        "name": "motorscooter",
+                        "displayName": "motorscooter",
+                        "enumValue": 30
+                    },
+                    {
+                        "name": "sweepingMachine",
+                        "displayName": "sweepingMachine",
+                        "enumValue": 31
+                    },
+                    {
+                        "name": "tanker",
+                        "displayName": "tanker",
+                        "enumValue": 32
+                    },
+                    {
+                        "name": "tempo",
+                        "displayName": "tempo",
+                        "enumValue": 33
+                    },
+                    {
+                        "name": "threeWheeledVehicle",
+                        "displayName": "threeWheeledVehicle",
+                        "enumValue": 34
+                    },
+                    {
+                        "name": "tipper",
+                        "displayName": "tipper",
+                        "enumValue": 35
+                    },
+                    {
+                        "name": "trailer",
+                        "displayName": "trailer",
+                        "enumValue": 36
+                    },
+                    {
+                        "name": "tram",
+                        "displayName": "tram",
+                        "enumValue": 37
+                    },
+                    {
+                        "name": "trolley",
+                        "displayName": "trolley",
+                        "enumValue": 38
+                    },
+                    {
+                        "name": "twoWheeledVehicle",
+                        "displayName": "twoWheeledVehicle",
+                        "enumValue": 39
+                    },
+                    {
+                        "name": "van",
+                        "displayName": "van",
+                        "enumValue": 40
+                    },
+                    {
+                        "name": "vehicleWithoutCatalyticConverter",
+                        "displayName": "vehicleWithoutCatalyticConverter",
+                        "enumValue": 41
+                    },
+                    {
+                        "name": "vehicleWithCaravan",
+                        "displayName": "vehicleWithCaravan",
+                        "enumValue": 42
+                    },
+                    {
+                        "name": "vehicleWithTrailer",
+                        "displayName": "vehicleWithTrailer",
+                        "enumValue": 43
+                    },
+                    {
+                        "name": "withEvenNumberedRegistrationPlates",
+                        "displayName": "withEvenNumberedRegistrationPlates",
+                        "enumValue": 44
+                    },
+                    {
+                        "name": "withOddNumberedRegistrationPlates",
+                        "displayName": "withOddNumberedRegistrationPlates",
+                        "enumValue": 45
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 46
+                    }
+                ]
+            }
+        }
+    ]
+}
