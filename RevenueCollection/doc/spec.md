@@ -1,15 +1,31 @@
-Entity: RevenueCollection  
-=========================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entity: RevenueCollection  
+=========================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Open License](https://github.com/smart-data-models//dataModel.PublicAccountability/blob/master/RevenueCollection/LICENSE.md)  
 [document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Global description: **A Data Model for city revenue collection operations.**  
+version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## List of properties  
 
-- `address`: The mailing address  - `alternateName`: An alternative name for this item  - `amountCollected`: Amount collected towards the service corresponding to this observation.  - `areaServed`: The geographic area where a service or offered item is provided  - `dataProvider`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved`: The date and time of this observation in ISO8601 UTC format  - `description`: A description of this item  - `enrollmentCertificateRecoveryAmount`: Amount collected towards Enrollment Certificate from the establishment on annual basis.  - `id`: Unique identifier of the entity  - `location`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `month`: Month corresponding to this observation and is described in MM format, for eg. '05' for the month of May.  - `municipalityInfo`: Municipality information corresponding to this observation.  - `name`: The name of this item.  - `owner`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `registrationCertificateRecoveryAmount`: Amount collected towards Registration Certificate on monthly basis from the establishment per employee.  - `revenueCollectionType`: Type of source from which the city administration collects the revenue, could be property tax, vehicle registration, party hall booking, community hall booking, auditorium booking etc.  - `seeAlso`: list of uri pointing to additional resources about the item  - `source`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `totalCount`: Count of the revenue collection service corresponding to this observation.  - `type`: NGSI Entity type. It has to be RevenueCollection  - `vehicleType`: Type of vehicle from the point of view of its structural characteristics. This is different than the vehicle category . The following values defined by _VehicleTypeEnum_ and _VehicleTypeEnum2_, [DATEX 2 version 2.3](http://d2docs.ndwcloud.nu/_static/umlmodel/v2.3/index.htm)  - `vehicleTypeCode`: The code for vehicleType corresponding to this observation. For eg.- '1' - MOPED/SCOOTER, '2' - MOTOR CYCLE, '4' - PRIVATE MOTOR CAR/JEEP CAR, '21' - TEMPO, '26' - BUS, etc.  - `year`: Year corresponding to this observation and is described in YYYY format, for eg. '2020'.    
+<sup><sub>[*] If there is not a type in an attribute is because it could have several types or different formats/patterns</sub></sup>  
+- `address[object]`: The mailing address  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: An alternative name for this item  - `amountCollected[number]`: Amount collected towards the service corresponding to this observation.  - `areaServed[string]`: The geographic area where a service or offered item is provided  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: A sequence of characters identifying the provider of the harmonised data entity.  - `dateCreated[string]`: Entity creation timestamp. This will usually be allocated by the storage platform.  - `dateModified[string]`: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.  - `dateObserved[string]`: The date and time of this observation in ISO8601 UTC format  - `description[string]`: A description of this item  - `enrollmentCertificateRecoveryAmount[number]`: Amount collected towards Enrollment Certificate from the establishment on annual basis.  - `id[*]`: Unique identifier of the entity  - `location[*]`: Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon  - `month[string]`: Month corresponding to this observation and is described in MM format, for eg. '05' for the month of May.  - `municipalityInfo[object]`: Municipality information corresponding to this observation.  - `name[string]`: The name of this item.  - `owner[array]`: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)  - `registrationCertificateRecoveryAmount[number]`: Amount collected towards Registration Certificate on monthly basis from the establishment per employee.  - `revenueCollectionType[string]`: Type of source from which the city administration collects the revenue, could be property tax, vehicle registration, party hall booking, community hall booking, auditorium booking etc.  - `seeAlso[*]`: list of uri pointing to additional resources about the item  - `source[string]`: A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.  - `totalCount[number]`: Count of the revenue collection service corresponding to this observation.  - `type[string]`: NGSI Entity type. It has to be RevenueCollection  - `vehicleType[string]`: Type of vehicle from the point of view of its structural characteristics. This is different than the vehicle category . The following values defined by _VehicleTypeEnum_ and _VehicleTypeEnum2_, [DATEX 2 version 2.3](http://d2docs.ndwcloud.nu/_static/umlmodel/v2.3/index.htm)  - `vehicleTypeCode[string]`: The code for vehicleType corresponding to this observation. For eg.- '1' - MOPED/SCOOTER, '2' - MOTOR CYCLE, '4' - PRIVATE MOTOR CAR/JEEP CAR, '21' - TEMPO, '26' - BUS, etc.  - `year[string]`: Year corresponding to this observation and is described in YYYY format, for eg. '2020'.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Required properties  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Data Model description of properties  
 Sorted alphabetically (click for details)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RevenueCollection:    
@@ -404,9 +420,14 @@ RevenueCollection:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Example payloads    
 #### RevenueCollection NGSI-v2 key-values Example    
 Here is an example of a RevenueCollection in JSON-LD format as key-values. This is compatible with NGSI-v2 when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:001:rtir:0234",  
@@ -432,8 +453,10 @@ RevenueCollection:
   }  
 }  
 ```  
+</details>  
 #### RevenueCollection NGSI-v2 normalized Example    
 Here is an example of a RevenueCollection in JSON-LD format as normalized. This is compatible with NGSI-v2 when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:001:rtir:0234",  
@@ -492,102 +515,116 @@ RevenueCollection:
   }  
 }  
 ```  
+</details>  
 #### RevenueCollection NGSI-LD key-values Example    
 Here is an example of a RevenueCollection in JSON-LD format as key-values. This is compatible with NGSI-LD when  using `options=keyValues` and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:001:rtir:0234",  
-  "@context": [  
-    "iudx:RevenueCollection",  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/master/context.jsonld"  
-  ],  
-  "type": "RevenueCollection",  
-  "totalCount": 436,  
-  "registrationCertificateRecoveryAmount": 10400,  
-  "enrollmentCertificateRecoveryAmount": 8400,  
-  "year": "2020",  
-  "dateObserved": "2021-11-10T01:16:01Z",  
-  "month": "02",  
-  "revenueCollectionType": "Property Tax",  
-  "vehicleTypeCode": "2",  
-  "amountCollected": 20400,  
-  "vehicleType": "motorcycle",  
-  "municipalityInfo": {  
-    "district": "Bangalore Urban",  
-    "ulbName": "BMC",  
-    "cityId": "23",  
-    "addressRegion": "Karnataka",  
-    "addressLocality": "Bangalore",  
-    "zoneId": "2",  
-    "wardNum": 4  
-  }  
+    "id": "urn:ngsi-ld:001:rtir:0234",  
+    "@context": [  
+        "iudx:RevenueCollection",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/master/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.PublicAccountability/master/context.jsonld"  
+    ],  
+    "type": "RevenueCollection",  
+    "totalCount": 436,  
+    "registrationCertificateRecoveryAmount": 10400,  
+    "enrollmentCertificateRecoveryAmount": 8400,  
+    "year": "2020",  
+    "dateObserved": "2021-11-10T01:16:01Z",  
+    "month": "02",  
+    "revenueCollectionType": "Property Tax",  
+    "vehicleTypeCode": "2",  
+    "amountCollected": 20400,  
+    "vehicleType": "motorcycle",  
+    "municipalityInfo": {  
+        "district": "Bangalore Urban",  
+        "ulbName": "BMC",  
+        "cityId": "23",  
+        "addressRegion": "Karnataka",  
+        "addressLocality": "Bangalore",  
+        "zoneId": "2",  
+        "wardNum": 4  
+    }  
 }  
 ```  
+</details>  
 #### RevenueCollection NGSI-LD normalized Example    
 Here is an example of a RevenueCollection in JSON-LD format as normalized. This is compatible with NGSI-LD when not using options and returns the context data of an individual entity.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:001:rtir:0234",  
-  "type": "RevenueCollection",  
-  "totalCount": {  
-    "type": "Property",  
-    "value": 436  
-  },  
-  "registrationCertificateRecoveryAmount": {  
-    "type": "Property",  
-    "value": 10400  
-  },  
-  "enrollmentCertificateRecoveryAmount": {  
-    "type": "Property",  
-    "value": 8400  
-  },  
-  "year": {  
-    "type": "Property",  
-    "value": "2020"  
-  },  
-  "dateObserved": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "date-time",  
-      "@value": "2021-11-10T01:16:01Z"  
-    }  
-  },  
-  "month": {  
-    "type": "Property",  
-    "value": "02"  
-  },  
-  "revenueCollectionType": {  
-    "type": "Property",  
-    "value": "Property Tax"  
-  },  
-  "vehicleTypeCode": {  
-    "type": "Property",  
-    "value": "2"  
-  },  
-  "amountCollected": {  
-    "type": "Property",  
-    "value": 20400  
-  },  
-  "vehicleType": {  
-    "type": "Property",  
-    "value": "motorcycle"  
-  },  
-  "municipalityInfo": {  
-    "type": "Property",  
-    "value": {  
-      "district": "Bangalore Urban",  
-      "ulbName": "BMC",  
-      "cityId": "23",  
-      "addressRegion": "Karnataka",  
-      "addressLocality": "Bangalore",  
-      "zoneId": "2",  
-      "wardNum": 4  
-    }  
-  },  
-  "@context": [  
-    "iudx:RevenueCollection",  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/master/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:001:rtir:0234",  
+    "type": "RevenueCollection",  
+    "totalCount": {  
+        "type": "Property",  
+        "value": 436  
+    },  
+    "registrationCertificateRecoveryAmount": {  
+        "type": "Property",  
+        "value": 10400  
+    },  
+    "enrollmentCertificateRecoveryAmount": {  
+        "type": "Property",  
+        "value": 8400  
+    },  
+    "year": {  
+        "type": "Property",  
+        "value": "2020"  
+    },  
+    "dateObserved": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "date-time",  
+            "@value": "2021-11-10T01:16:01Z"  
+        }  
+    },  
+    "month": {  
+        "type": "Property",  
+        "value": "02"  
+    },  
+    "revenueCollectionType": {  
+        "type": "Property",  
+        "value": "Property Tax"  
+    },  
+    "vehicleTypeCode": {  
+        "type": "Property",  
+        "value": "2"  
+    },  
+    "amountCollected": {  
+        "type": "Property",  
+        "value": 20400  
+    },  
+    "vehicleType": {  
+        "type": "Property",  
+        "value": "motorcycle"  
+    },  
+    "municipalityInfo": {  
+        "type": "Property",  
+        "value": {  
+            "district": "Bangalore Urban",  
+            "ulbName": "BMC",  
+            "cityId": "23",  
+            "addressRegion": "Karnataka",  
+            "addressLocality": "Bangalore",  
+            "zoneId": "2",  
+            "wardNum": 4  
+        }  
+    },  
+    "@context": [  
+        "iudx:RevenueCollection",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/master/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.PublicAccountability/master/context.jsonld"  
+    ]  
 }  
 ```  
-See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+See [FAQ 10](https://smartdatamodels.org/index.php/faqs/) to get an answer on how to deal with magnitude units  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
