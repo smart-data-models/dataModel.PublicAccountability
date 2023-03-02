@@ -1,5 +1,6 @@
 {
     "@context": {
+        "RevenueCollection": "https://smartdatamodels.org/dataModel.PublicAccountability/RevenueCollection",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "amountCollected": "https://smartdatamodels.org/dataModel.PublicAccountability/amountCollected",
