@@ -2,14 +2,19 @@
     "@context": {
         "RevenueCollection": "https://smartdatamodels.org/dataModel.PublicAccountability/RevenueCollection",
         "address": "https://smartdatamodels.org/address",
+        "addressCountry": "https://smartdatamodels.org/addressCountry",
+        "addressLocality": "https://smartdatamodels.org/addressLocality",
+        "addressRegion": "https://smartdatamodels.org/addressRegion",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "amountCollected": "https://smartdatamodels.org/dataModel.PublicAccountability/amountCollected",
         "areaServed": "https://smartdatamodels.org/areaServed",
+        "cityId": "https://smartdatamodels.org/dataModel.PublicAccountability/cityId",
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
         "dateObserved": "https://smartdatamodels.org/dateObserved",
         "description": "http://purl.org/dc/terms/description",
+        "district": "https://smartdatamodels.org/district",
         "enrollmentCertificateRecoveryAmount": "https://smartdatamodels.org/dataModel.PublicAccountability/enrollmentCertificateRecoveryAmount",
         "id": "@id",
         "location": "ngsi-ld:location",
@@ -18,17 +23,24 @@
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "owner": "https://smartdatamodels.org/owner",
+        "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
+        "postalCode": "https://smartdatamodels.org/postalCode",
         "registrationCertificateRecoveryAmount": "https://smartdatamodels.org/dataModel.PublicAccountability/registrationCertificateRecoveryAmount",
         "revenueCollectionType": "https://smartdatamodels.org/dataModel.PublicAccountability/revenueCollectionType",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "source": "https://smartdatamodels.org/source",
+        "streetAddress": "https://smartdatamodels.org/streetAddress",
+        "streetNr": "https://smartdatamodels.org/streetNr",
         "totalCount": {
             "@container": "@list",
             "@id": "ngsi-ld:totalCount"
         },
         "type": "@type",
+        "ulbName": "https://smartdatamodels.org/dataModel.PublicAccountability/ulbName",
         "vehicleType": "https://smartdatamodels.org/dataModel.PublicAccountability/vehicleType",
         "vehicleTypeCode": "https://smartdatamodels.org/dataModel.PublicAccountability/vehicleTypeCode",
-        "year": "https://smartdatamodels.org/dataModel.PublicAccountability/year"
+        "wardNum": "https://smartdatamodels.org/dataModel.PublicAccountability/wardNum",
+        "year": "https://smartdatamodels.org/dataModel.PublicAccountability/year",
+        "zoneId": "https://smartdatamodels.org/dataModel.PublicAccountability/zoneId"
     }
 }
