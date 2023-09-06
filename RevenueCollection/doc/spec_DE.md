@@ -14,8 +14,21 @@
 
 ## Liste der Eigenschaften  
 
-<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
-- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `amountCollected[number]`: Betrag, der für die dieser Beobachtung entsprechende Dienstleistung erhoben wird.  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `dateObserved[string]`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `description[string]`: Eine Beschreibung dieses Artikels  - `enrollmentCertificateRecoveryAmount[number]`: Betrag, der jährlich von der Einrichtung für die Immatrikulationsbescheinigung erhoben wird.  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `month[string]`: Der Monat, der dieser Beobachtung entspricht, wird im Format MM angegeben, z. B. "05" für den Monat Mai.  - `municipalityInfo[object]`: Informationen der Gemeinde zu dieser Beobachtung.  - `name[string]`: Der Name dieses Artikels.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `registrationCertificateRecoveryAmount[number]`: Betrag, der monatlich für die Zulassungsbescheinigung vom Betrieb pro Arbeitnehmer erhoben wird.  - `revenueCollectionType[string]`: Art der Quelle, aus der die Stadtverwaltung die Einnahmen bezieht, z. B. Grundsteuer, Kfz-Zulassung, Buchung von Festsälen, Gemeindesälen, Hörsälen usw.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `totalCount[number]`: Anzahl der dieser Beobachtung entsprechenden Erhebungsdienste.  - `type[string]`: NGSI-Entitätstyp. Es muss RevenueCollection sein  - `vehicleType[string]`: Fahrzeugtyp unter dem Gesichtspunkt seiner strukturellen Merkmale. Dies ist etwas anderes als die Fahrzeugkategorie. Die folgenden durch _VehicleTypeEnum_ und _VehicleTypeEnum2_ definierten Werte, [DATEX 2 Version 2.3](http://d2docs.ndwcloud.nu/_static/umlmodel/v2.3/index.htm)  - `vehicleTypeCode[string]`: Der Code für den Fahrzeugtyp, der dieser Beobachtung entspricht. Z. B. '1' - Moped/Scooter, '2' - Motorrad, '4' - PRIVATE MOTOR CAR/JEEP CAR, '21' - TEMPO, '26' - BUS, usw.  - `year[string]`: Jahr, das dieser Beobachtung entspricht und im Format JJJJ beschrieben wird, z. B. "2020".  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Das Land. Zum Beispiel, Spanien  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: Die Ortschaft, in der sich die Adresse befindet, und die in der Region liegt  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: Die Region, in der sich der Ort befindet, und die auf dem Land liegt  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Ein Bezirk ist eine Art von Verwaltungseinheit, die in einigen Ländern von der lokalen Regierung verwaltet wird.    
+	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `amountCollected[number]`: Erhobener Betrag für die dieser Beobachtung entsprechende Dienstleistung  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `dateObserved[date-time]`: Das Datum und die Uhrzeit dieser Beobachtung im ISO8601 UTC-Format  - `description[string]`: Eine Beschreibung dieses Artikels  - `enrollmentCertificateRecoveryAmount[number]`: Jährlich von der Einrichtung für die Immatrikulationsbescheinigung erhobener Betrag  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `month[string]`: Monat, der dieser Beobachtung entspricht und im MM-Format beschrieben wird, z. B. '05' für den Monat Mai  - `municipalityInfo[object]`: Informationen der Gemeinde zu dieser Beobachtung  	- `addressLocality`:     
+	- `addressRegion`:     
+	- `cityId`:     
+	- `district`:     
+	- `ulbName`:     
+	- `wardNum`:     
+- `name[string]`: Der Name dieses Artikels  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `registrationCertificateRecoveryAmount[number]`: Betrag, der monatlich für die Zulassungsbescheinigung vom Betrieb pro Arbeitnehmer erhoben wird  - `revenueCollectionType[string]`: Art der Quelle, aus der die Stadtverwaltung die Einnahmen einnimmt, z. B. Grundsteuer, Kfz-Zulassung, Buchung von Festsälen, Gemeindesälen, Hörsälen usw.  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `totalCount[number]`: Anzahl der dieser Beobachtung entsprechenden Erhebungsdienste  - `type[string]`: NGSI-Entitätstyp. Es muss RevenueCollection sein  - `vehicleType[string]`: Fahrzeugtyp unter dem Gesichtspunkt seiner strukturellen Merkmale. Dies ist etwas anderes als die Fahrzeugkategorie. Die folgenden durch _VehicleTypeEnum_ und _VehicleTypeEnum2_ definierten Werte, [DATEX 2 Version 2.3](http://d2docs.ndwcloud.nu/_static/umlmodel/v2.3/index.htm)  - `vehicleTypeCode[string]`: Der Code für den Fahrzeugtyp, der dieser Beobachtung entspricht. Z. B. '1' - Moped/Scooter, '2' - Motorrad, '4' - PRIVATE MOTOR CAR/JEEP CAR, '21' - TEMPO, '26' - BUS, usw.  - `year[string]`: Das Jahr, das dieser Beobachtung entspricht, wird im Format JJJJ angegeben, z. B. "2020".  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
 <!-- /35-RequiredProperties -->  
@@ -29,99 +42,131 @@
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 RevenueCollection:    
-  description: 'A Data Model for city revenue collection operations.'    
+  description: A Data Model for city revenue collection operations.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     amountCollected:    
-      description: 'Amount collected towards the service corresponding to this observation.'    
+      description: Amount collected towards the service corresponding to this observation    
       type: number    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateObserved:    
-      description: 'The date and time of this observation in ISO8601 UTC format'    
+      description: The date and time of this observation in ISO8601 UTC format    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     enrollmentCertificateRecoveryAmount:    
-      description: 'Amount collected towards Enrollment Certificate from the establishment on annual basis.'    
+      description: Amount collected towards Enrollment Certificate from the establishment on annual basis    
       type: number    
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &revenuecollection_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -140,9 +185,11 @@ RevenueCollection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -164,9 +211,11 @@ RevenueCollection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -190,9 +239,11 @@ RevenueCollection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -213,9 +264,11 @@ RevenueCollection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -239,9 +292,11 @@ RevenueCollection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -267,17 +322,19 @@ RevenueCollection:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     month:    
-      description: 'Month corresponding to this observation and is described in MM format, for eg. ''05'' for the month of May.'    
+      description: 'Month corresponding to this observation and is described in MM format, for eg. ''05'' for the month of May'    
       type: string    
       x-ngsi:    
         type: Property    
     municipalityInfo:    
-      description: 'Municipality information corresponding to this observation.'    
+      description: Municipality information corresponding to this observation    
       properties:    
         addressLocality:    
           type: string    
@@ -297,30 +354,44 @@ RevenueCollection:
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *revenuecollection_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     registrationCertificateRecoveryAmount:    
-      description: 'Amount collected towards Registration Certificate on monthly basis from the establishment per employee.'    
+      description: Amount collected towards Registration Certificate on monthly basis from the establishment per employee    
       type: number    
       x-ngsi:    
         type: Property    
     revenueCollectionType:    
-      description: 'Type of source from which the city administration collects the revenue, could be property tax, vehicle registration, party hall booking, community hall booking, auditorium booking etc.'    
+      description: 'Type of source from which the city administration collects the revenue, could be property tax, vehicle registration, party hall booking, community hall booking, auditorium booking etc'    
       type: string    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -332,17 +403,17 @@ RevenueCollection:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     totalCount:    
-      description: 'Count of the revenue collection service corresponding to this observation.'    
+      description: Count of the revenue collection service corresponding to this observation    
       type: number    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity type. It has to be RevenueCollection'    
+      description: NGSI Entity type. It has to be RevenueCollection    
       enum:    
         - RevenueCollection    
       type: string    
@@ -357,8 +428,8 @@ RevenueCollection:
         - autorickshaw    
         - bicycle    
         - binTrolley    
-        - 'BRT mini bus·'    
-        - 'BRT bus'    
+        - BRT mini bus·    
+        - BRT bus    
         - bus    
         - car    
         - caravan    
@@ -401,19 +472,19 @@ RevenueCollection:
       x-ngsi:    
         type: Property    
     vehicleTypeCode:    
-      description: 'The code for vehicleType corresponding to this observation. For eg.- ''1'' - MOPED/SCOOTER, ''2'' - MOTOR CYCLE, ''4'' - PRIVATE MOTOR CAR/JEEP CAR, ''21'' - TEMPO, ''26'' - BUS, etc.'    
+      description: 'The code for vehicleType corresponding to this observation. For eg.- ''1'' - MOPED/SCOOTER, ''2'' - MOTOR CYCLE, ''4'' - PRIVATE MOTOR CAR/JEEP CAR, ''21'' - TEMPO, ''26'' - BUS, etc'    
       type: string    
       x-ngsi:    
         type: Property    
     year:    
-      description: 'Year corresponding to this observation and is described in YYYY format, for eg. ''2020''.'    
+      description: 'Year corresponding to this observation and is described in YYYY format, for eg. ''2020'''    
       type: string    
       x-ngsi:    
         type: Property    
   required: []    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.PublicAccountability/blob/master/RevenueCollection/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.PublicAccountability/RevenueCollection/schema.json    
   x-model-tags: IUDX    
