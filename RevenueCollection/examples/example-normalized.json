@@ -2,15 +2,15 @@
   "id": "urn:ngsi-ld:001:rtir:0234",
   "type": "RevenueCollection",
   "totalCount": {
-    "type": "number",
+    "type": "Number",
     "value": 436
   },
   "registrationCertificateRecoveryAmount": {
-    "type": "number",
+    "type": "Number",
     "value": 10400
   },
   "enrollmentCertificateRecoveryAmount": {
-    "type": "number",
+    "type": "Number",
     "value": 8400
   },
   "year": {
@@ -18,7 +18,7 @@
     "value": "2020"
   },
   "dateObserved": {
-    "type": "Date-Time",
+    "type": "DateTime",
     "value": "2021-11-10T01:16:01Z"
   },
   "month": {
@@ -34,7 +34,7 @@
     "value": "2"
   },
   "amountCollected": {
-    "type": "number",
+    "type": "Number",
     "value": 20400
   },
   "vehicleType": {
