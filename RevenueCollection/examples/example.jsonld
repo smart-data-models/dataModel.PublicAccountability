@@ -1,28 +1,28 @@
 {
-    "id": "urn:ngsi-ld:001:rtir:0234",
-    "@context": [
-        "iudx:RevenueCollection",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/master/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.PublicAccountability/master/context.jsonld"
-    ],
-    "type": "RevenueCollection",
-    "totalCount": 436,
-    "registrationCertificateRecoveryAmount": 10400,
-    "enrollmentCertificateRecoveryAmount": 8400,
-    "year": "2020",
-    "dateObserved": "2021-11-10T01:16:01Z",
-    "month": "02",
-    "revenueCollectionType": "Property Tax",
-    "vehicleTypeCode": "2",
-    "amountCollected": 20400,
-    "vehicleType": "motorcycle",
-    "municipalityInfo": {
-        "district": "Bangalore Urban",
-        "ulbName": "BMC",
-        "cityId": "23",
-        "addressRegion": "Karnataka",
-        "addressLocality": "Bangalore",
-        "zoneId": "2",
-        "wardNum": 4
-    }
+  "id": "urn:ngsi-ld:001:rtir:0234",
+  "@context": [
+    "iudx:RevenueCollection",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/master/context.jsonld",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.PublicAccountability/master/context.jsonld"
+  ],
+  "type": "RevenueCollection",
+  "totalCount": 436,
+  "registrationCertificateRecoveryAmount": 10400,
+  "enrollmentCertificateRecoveryAmount": 8400,
+  "year": "2020",
+  "dateObserved": "2021-11-10T01:16:01Z",
+  "month": "02",
+  "revenueCollectionType": "Property Tax",
+  "vehicleTypeCode": "2",
+  "amountCollected": 20400,
+  "vehicleType": "motorcycle",
+  "municipalityInfo": {
+    "district": "Bangalore Urban",
+    "ulbName": "BMC",
+    "cityId": "23",
+    "addressRegion": "Karnataka",
+    "addressLocality": "Bangalore",
+    "zoneId": "2",
+    "wardNum": 4
+  }
 }
