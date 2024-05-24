@@ -24,31 +24,36 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "RevenueCollection"
 subject = "dataModel.PublicAccountability"
-totalCount = {'type': 'Property', 'value': 436}
+totalCount = 436
 attribute = "totalCount"
 value = totalCount
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-registrationCertificateRecoveryAmount = {'type': 'Property', 'value': 10400}
+registrationCertificateRecoveryAmount = 10400
 attribute = "registrationCertificateRecoveryAmount"
 value = registrationCertificateRecoveryAmount
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-enrollmentCertificateRecoveryAmount = {'type': 'Property', 'value': 8400}
+enrollmentCertificateRecoveryAmount = 8400
 attribute = "enrollmentCertificateRecoveryAmount"
 value = enrollmentCertificateRecoveryAmount
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-year = "{'type': 'Property', 'value': '2020'}"
+year = "2020"
 attribute = "year"
 value = year
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
