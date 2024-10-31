@@ -10,12 +10,12 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "cityId": "https://smartdatamodels.org/dataModel.PublicAccountability/cityId",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -25,7 +25,7 @@
         "district": "https://smartdatamodels.org/district",
         "enrollmentCertificateRecoveryAmount": "https://smartdatamodels.org/dataModel.PublicAccountability/enrollmentCertificateRecoveryAmount",
         "id": "@id",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "month": "https://smartdatamodels.org/dataModel.PublicAccountability/month",
         "municipalityInfo": "https://smartdatamodels.org/dataModel.PublicAccountability/municipalityInfo",
         "name": "https://smartdatamodels.org/name",
@@ -41,7 +41,7 @@
         "streetNr": "https://smartdatamodels.org/streetNr",
         "totalCount": {
             "@container": "@list",
-            "@id": "ngsi-ld:totalCount"
+            "@id": "https://uri.etsi.org/ngsi-ld/totalCount"
         },
         "type": "@type",
         "ulbName": "https://smartdatamodels.org/dataModel.PublicAccountability/ulbName",
