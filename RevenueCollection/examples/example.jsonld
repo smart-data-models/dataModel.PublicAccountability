@@ -1,9 +1,5 @@
 {
   "id": "urn:ngsi-ld:001:rtir:0234",
-  "@context": [
-    "iudx:RevenueCollection",
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.Transportation/master/context.jsonld"
-  ],
   "type": "RevenueCollection",
   "totalCount": 436,
   "registrationCertificateRecoveryAmount": 10400,
@@ -23,5 +19,8 @@
     "addressLocality": "Bangalore",
     "zoneId": "2",
     "wardNum": 4
-  }
+  },
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.PublicAccountability/master/context.jsonld"
+  ]
 }
