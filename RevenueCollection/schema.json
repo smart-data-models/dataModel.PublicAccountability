@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.0.1",
   "modelTags": "IUDX",
   "derivedFrom": "",
@@ -26,11 +26,11 @@
         },
         "year": {
           "type": "string",
-          "description": "Property. Year corresponding to this observation and is described in YYYY format, for eg. '2020'."
+          "description": "Property. Year corresponding to this observation and is described in YYYY format, for eg. '2020'"
         },
         "month": {
           "type": "string",
-          "description": "Property. Month corresponding to this observation and is described in MM format, for eg. '05' for the month of May."
+          "description": "Property. Month corresponding to this observation and is described in MM format, for eg. '05' for the month of May"
         },
         "dateObserved": {
           "type": "string",
@@ -39,23 +39,23 @@
         },
         "totalCount": {
           "type": "number",
-          "description": "Property. Count of the revenue collection service corresponding to this observation."
+          "description": "Property. Count of the revenue collection service corresponding to this observation"
         },
         "registrationCertificateRecoveryAmount": {
           "type": "number",
-          "description": "Property. Amount collected towards Registration Certificate on monthly basis from the establishment per employee."
+          "description": "Property. Amount collected towards Registration Certificate on monthly basis from the establishment per employee"
         },
         "revenueCollectionType": {
           "type": "string",
-          "description": "Property. Type of source from which the city administration collects the revenue, could be property tax, vehicle registration, party hall booking, community hall booking, auditorium booking etc."
+          "description": "Property. Type of source from which the city administration collects the revenue, could be property tax, vehicle registration, party hall booking, community hall booking, auditorium booking etc"
         },
         "enrollmentCertificateRecoveryAmount": {
           "type": "number",
-          "description": "Property. Amount collected towards Enrollment Certificate from the establishment on annual basis."
+          "description": "Property. Amount collected towards Enrollment Certificate from the establishment on annual basis"
         },
         "vehicleTypeCode": {
           "type": "string",
-          "description": "Property. The code for vehicleType corresponding to this observation. For eg.- '1' - MOPED/SCOOTER, '2' - MOTOR CYCLE, '4' - PRIVATE MOTOR CAR/JEEP CAR, '21' - TEMPO, '26' - BUS, etc."
+          "description": "Property. The code for vehicleType corresponding to this observation. For eg.- '1' - MOPED/SCOOTER, '2' - MOTOR CYCLE, '4' - PRIVATE MOTOR CAR/JEEP CAR, '21' - TEMPO, '26' - BUS, etc"
         },
         "vehicleType": {
           "type": "string",
@@ -67,7 +67,7 @@
             "autorickshaw",
             "bicycle",
             "binTrolley",
-            "BRT mini bus·",
+            "BRT mini bus\u00b7",
             "BRT bus",
             "bus",
             "car",
@@ -111,11 +111,11 @@
         },
         "amountCollected": {
           "type": "number",
-          "description": "Property. Amount collected towards the service corresponding to this observation."
+          "description": "Property. Amount collected towards the service corresponding to this observation"
         },
         "municipalityInfo": {
           "type": "object",
-          "description": "Property. Municipality information corresponding to this observation.",
+          "description": "Property. Municipality information corresponding to this observation",
           "properties": {
             "district": {
               "type": "string"

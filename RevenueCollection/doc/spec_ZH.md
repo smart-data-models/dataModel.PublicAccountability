@@ -1,40 +1,40 @@
 <!-- 10-Header -->    
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)    
-エンティティレベニューコレクション    
-=================<!-- /10-Header -->    
+实体：税收    
+=====<!-- /10-Header -->    
 <!-- 15-License -->    
-[オープン・ライセンス](https://github.com/smart-data-models//dataModel.PublicAccountability/blob/master/RevenueCollection/LICENSE.md)    
-[文書は自動的に生成される](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
+[开放许可](https://github.com/smart-data-models//dataModel.PublicAccountability/blob/master/RevenueCollection/LICENSE.md)    
+[文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)    
 <!-- /15-License -->    
 <!-- 20-Description -->    
-グローバルな説明**市の歳入徴収業務のためのデータモデルである。    
-バージョン: 0.0.1    
+全局描述：**城市税收业务的数据模型。    
+版本： 0.0.1    
 <!-- /20-Description -->    
 <!-- 30-PropertiesList -->    
-## プロパティのリスト    
-<sup><sub>[*] 属性に型がない場合は、複数の型があるか、異なるフォーマット/パターンがある可能性があるためです</sub></sup>。    
-- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国。例えば、スペイン  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
-	- `addressLocality[string]`: 番地がある地域と、その地域に含まれる地域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
-	- `addressRegion[string]`: その地域がある地域、またその国がある地域  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
-	- `district[string]`: 地区とは行政区画の一種で、国によっては地方自治体によって管理されている。      
-	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
-	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
-	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
-- `alternateName[string]`: この項目の別名  - `amountCollected[number]`: この観測に対応するサービスに対する徴収額  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[date-time]`: ISO8601 UTCフォーマットでの観測日時  - `description[string]`: この商品の説明  - `enrollmentCertificateRecoveryAmount[number]`: 事業所から毎年徴収される在籍証明書の金額  - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `month[string]`: この観測に対応する月であり、MMフォーマットで記述される。  - `municipalityInfo[object]`: この観測に対応する自治体情報  	- `addressLocality`:       
+## 属性列表    
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。    
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)    
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)    
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)    
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理      
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)    
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)    
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)    
+- `alternateName[string]`: 该项目的替代名称  - `amountCollected[number]`: 为与该观察结果相对应的服务收取的金额  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `dateObserved[date-time]`: 以 ISO8601 UTC 格式表示的观测日期和时间  - `description[string]`: 项目描述  - `enrollmentCertificateRecoveryAmount[number]`: 每年从机构收取的注册证书金额  - `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `month[string]`: 与该观测值相对应的月份，以 MM 格式描述，例如 "05 "表示 5 月份  - `municipalityInfo[object]`: 与该观测结果相对应的城市信息  	- `addressLocality`:       
 	- `addressRegion`:       
 	- `cityId`:       
 	- `district`:       
 	- `ulbName`:       
 	- `wardNum`:       
-- `name[string]`: このアイテムの名前  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `registrationCertificateRecoveryAmount[number]`: 従業員1人当たり、事業所から毎月徴収される登録証明書の金額  - `revenueCollectionType[string]`: 固定資産税、自動車登録、パーティー会場の予約、公民館の予約、公会堂の予約など。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `totalCount[number]`: この観測に対応する歳入徴収サービスの回数  - `type[string]`: NGSI エンティティタイプ。これは RevenueCollection でなければなりません。  - `vehicleType[string]`: 車両の構造的特徴から見た車両のタイプ。これは車両カテゴリーとは異なる。DATEX2バージョン2.3](http://d2docs.ndwcloud.nu/_static/umlmodel/v2.3/index.htm)の_VehicleTypeEnum_および_VehicleTypeEnum2_で定義される以下の値。  - `vehicleTypeCode[string]`: このオブザベーションに対応する vehicleType のコード。例：'1' - MOPED/SCOOTER、'2' - MOTOR CYCLE、'4' - PRIVATE MOTOR CAR/JEEP CAR、'21' - TEMPO、'26' - BUSなど。  - `year[string]`: この観測に対応する年であり、YYYYフォーマットで記述される。  <!-- /30-PropertiesList -->    
+- `name[string]`: 该项目的名称  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `registrationCertificateRecoveryAmount[number]`: 每月从机构收取的每名雇员的注册证书费用  - `revenueCollectionType[string]`: 城市管理部门征收收入的来源类型，可能是财产税、车辆登记、宴会厅预订、社区礼堂预订、礼堂预订等。  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `totalCount[number]`: 与该观察结果相对应的税收服务计数  - `type[string]`: NGSI 实体类型。必须是 RevenueCollection  - `vehicleType[string]`: 从结构特征的角度来看的车辆类型。这与车辆类别不同。以下值由 _VehicleTypeEnum_ 和 _VehicleTypeEnum2_ 定义，[DATEX 2 2.3 版](http://d2docs.ndwcloud.nu/_static/umlmodel/v2.3/index.htm)  - `vehicleTypeCode[string]`: 与该观察结果相对应的车辆类型代码。例如："1"- 轻便摩托车/轻便摩托车，"2"- 摩托车，"4"- 私人机动车/私家车，"21"- TEMPO，"26"- 公共汽车等。  - `year[string]`: 与该观测值相对应的年份，以 YYYY 格式描述，例如 "2020"。  <!-- /30-PropertiesList -->    
 <!-- 35-RequiredProperties -->    
-必須プロパティ    
+所需属性    
 <!-- /35-RequiredProperties -->    
 <!-- 40-RequiredProperties -->    
 <!-- /40-RequiredProperties -->    
 <!-- 50-DataModelHeader -->    
-## プロパティのデータモデル記述    
-アルファベット順（クリックで詳細表示）    
+## 属性的数据模型描述    
+按字母顺序排列（点击查看详情）    
 <!-- /50-DataModelHeader -->    
 <!-- 60-ModelYaml -->    
 <details><summary><strong>full yaml details</strong></summary>      
@@ -493,9 +493,9 @@ RevenueCollection:
 <!-- 70-MiddleNotes -->    
 <!-- /70-MiddleNotes -->    
 <!-- 80-Examples -->    
-## ペイロードの例    
-#### RevenueCollection NGSI-v2 キー値の例    
-以下は、RevenueCollection を JSON-LD フォーマットの key-values で表した例です。これは NGSI-v2 と互換性があり、`options=keyValues` を使用すると個々のエンティティのコンテキストデータを返します。    
+## 有效载荷示例    
+#### RevenueCollection NGSI-v2 key-values 示例    
+下面是一个以 JSON-LD 格式作为键值的 RevenueCollection 示例。当使用 `options=keyValues` 时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -523,8 +523,8 @@ RevenueCollection:
 }  
 ```  
 </details>    
-#### RevenueCollection NGSI-v2 正規化例    
-以下は、正規化された JSON-LD 形式の RevenueCollection の例です。これは、オプションを使用しない場合は NGSI-v2 と互換性があり、個々のエンティティのコンテキスト・データを返します。    
+#### 收入收集 NGSI-v2 标准化示例    
+下面是一个规范化 JSON-LD 格式的 RevenueCollection 示例。当不使用选项时，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -585,8 +585,8 @@ RevenueCollection:
 }  
 ```  
 </details>    
-#### RevenueCollection NGSI-LD キー値の例    
-以下は、RevenueCollection を JSON-LD フォーマットの key-values で表した例です。これは、`options=keyValues` を使用した場合に NGSI-LD と互換性があり、個々のエンティティのコンテキストデータを返します。    
+#### 收入收集 NGSI-LD 键值示例    
+下面是一个以 JSON-LD 格式作为键值的 RevenueCollection 示例。当使用 `options=keyValues` 时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -619,8 +619,8 @@ RevenueCollection:
 }  
 ```  
 </details>    
-#### 収益コレクション NGSI-LD 正規化例    
-以下は、正規化された JSON-LD 形式の RevenueCollection の例です。これは、オプションを使用しない場合は NGSI-LD と互換性があり、個々のエンティティのコンテキスト・データを返します。    
+#### 收入收集 NGSI-LD 正常化示例    
+下面是一个规范化 JSON-LD 格式的 RevenueCollection 示例。当不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。    
 <details><summary><strong>show/hide example</strong></summary>      
 ```json  
 {  
@@ -692,7 +692,7 @@ RevenueCollection:
 <!-- 90-FooterNotes -->    
 <!-- /90-FooterNotes -->    
 <!-- 95-Units -->    
-マグニチュード単位の扱い方については、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照のこと。    
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。    
 <!-- /95-Units -->    
 <!-- 97-LastFooter -->    
 ---    

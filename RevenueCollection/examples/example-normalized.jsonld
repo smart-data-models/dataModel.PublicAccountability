@@ -57,6 +57,6 @@
     }
   },
   "@context": [
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.PublicAccountability/master/context.jsonld"
+   "https://raw.githubusercontent.com/smart-data-models/dataModel.PublicAccountability/master/context.jsonld"
   ]
 }
